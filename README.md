@@ -1,0 +1,2 @@
+# snippets
+mainly for automation
