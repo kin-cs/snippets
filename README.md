@@ -47,7 +47,9 @@ for n in re.findall(u'[\u4e00-\u9fff]+',my_context):
     print(n)
     my_words_dict[n] = my_words_dict.get(n, 0) + 1
 
-sorted_by_value = sorted(my_words_dict.items(), key=lambda kv: kv[1]).reverse()
+sorted_by_value = sorted(my_words_dict.items(), key=lambda kv: kv[1])
+
+sorted_by_value.reverse()
 
 df = pd.DataFrame(columns=['vocab', 'times'])
 
